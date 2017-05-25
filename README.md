@@ -16,7 +16,7 @@ Tested on RHEL / Centos Docker based
 Just run command.
 
 ```
-curl -L bit.ly/alpineapk | sh
+curl -sL bit.ly/alpineapk | sh
 ```
 
 
