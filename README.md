@@ -1,7 +1,10 @@
-# alpine_on_any_distro
+# alpine apk package manager on any Linux distro.
 Alpine's Package manager on any Linux Distro.
 
+# Target platform
 Tested on RHEL / Centos Docker based
+
+# Install
 
 ```
 curl -L bit.ly/alpineapk | sh
