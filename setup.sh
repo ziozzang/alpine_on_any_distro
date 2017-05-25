@@ -5,6 +5,7 @@ ALPINE_URL="https://nl.alpinelinux.org/alpine/v3.6/releases/x86_64/alpine-miniro
 
 TAR_BIN="/bin/tar"
 
+cd /
 curl -o /tmp/alpine.tgz ${ALPINE_URL}
 
 # if there's no tar utility, use busybox's tar utility
