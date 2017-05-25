@@ -25,12 +25,13 @@ if [ ! -f ${TAR_BIN} ]; then
   #cp bin/* /bin/
   #cp sbin/* /sbin/
   cd /
-  #rm -rf /tmp/alpine*
 else
   #Fetch Alpine base system
   ${TAR_BIN} -xvzf /tmp/alpine.tgz --wildcards --no-anchored 'lib' '*apk*' 'bin'
 
 fi
+
+rm -rf /tmp/alpine*
 
 apk update
 #apk add -f libc6-compat
