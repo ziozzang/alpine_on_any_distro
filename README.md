@@ -1,20 +1,24 @@
-# alpine apk package manager on any Linux distro.
-Alpine's Package manager on any Linux Distro.
+# What is this?
+Alpine's Package manager(apk cli) on any Linux Distro.
 
 # Target platform
 Tested on RHEL / Centos Docker based
 
+## tested docker images
+
+* registry.access.redhat.com/rhel7-atomic
+* registry.access.redhat.com/rhel7
+* centos
+
+
 # Install
+
+Just run command.
 
 ```
 curl -L bit.ly/alpineapk | sh
 ```
 
-# tested docker images
-
-* registry.access.redhat.com/rhel7-atomic
-* registry.access.redhat.com/rhel7
-* centos
 
 # Limitation
 * RHEL / Centos use "GLIBC". but alpine use "MUSL".
