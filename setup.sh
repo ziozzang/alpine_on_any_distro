@@ -28,7 +28,7 @@ if [ ! -f ${TAR_BIN} ] ; then
   cd /
 else
   #Fetch Alpine base system
-  ${TAR_BIN} -xvzf /tmp/alpine.tgz --wildcards --no-anchored 'lib' '*apk*' 'bin'
+  ${TAR_BIN} -xvzf /tmp/alpine.tgz --wildcards --no-anchored 'lib' '*apk*' 'bin/busybox'
 fi
 
 rm -rf /tmp/alpine*
