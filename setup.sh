@@ -27,16 +27,20 @@ if [ ! -f ${TAR_BIN} ] ; then
   #cp sbin/* /sbin/
   cd /
 else if [ -f "/bin/busybox" ]; then
+  cd /tmp/
+  mv /tmp/alpine.tgz /tmp/alpine.tar.gz
+  gunzip /tmp/alpine.tar.gz
+  
   mkdir -p /tmp/alpine
   cd /tmp/alpine
-  tar -xzvf /tmp/alpine.tgz
+  tar -xvf /tmp/alpine.tar
   mv -f lib/* /lib/
   mv -f sbin/apk /sbin/
   mv -f usr/share/apk /usr/share/
   mv -f etc/apk /etc/
   mv -f var/cache/apk /var/cache/
   mv -f var/lib/apk /var/lib/
-  mv -f bin/busybox /bin/
+  #mv -f bin/busybox /bin/
   #cp bin/* /bin/
   #cp sbin/* /sbin/
   cd /
