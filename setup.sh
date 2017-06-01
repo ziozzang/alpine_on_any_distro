@@ -35,4 +35,5 @@ fi
 rm -rf /tmp/alpine*
 
 apk update
+apk upgrade
 #apk add -f libc6-compat
