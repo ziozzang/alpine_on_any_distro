@@ -28,6 +28,12 @@ Just run command.
 curl -sL bit.ly/alpineapk | sh
 ```
 
+if you want setup for Busybox based distro, use command below
+
+```
+curl -sL bit.ly/alpinebusybox | sh
+```
+
 # License
 MIT License. use your own risk.
 
