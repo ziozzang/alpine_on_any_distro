@@ -1,15 +1,22 @@
 # What is this?
-Alpine's Package manager(apk cli) on any Linux Distro.
+Add "Alpine's Package manager"(apk cli) on any Linux Distro.
+
+You can get state-of-arts alpines packages to your linux, with almost zero-cost or effort.
+
+Alpine's packages version is up-to-date, so you can get newer version of packaged binary. 
 
 # Target platform
-Tested on RHEL / Centos Docker based
+Tested on Any Docker based linux. (only tested for x86_64 based)
+
+maybe works with not only docker images but also bare-metal.
 
 ## tested docker images
 
 * registry.access.redhat.com/rhel7-atomic
 * registry.access.redhat.com/rhel7
 * centos
-
+* Debian
+* Ubuntu
 
 # Install
 
@@ -19,7 +26,9 @@ Just run command.
 curl -sL bit.ly/alpineapk | sh
 ```
 
+# License
+MIT License. use your own risk.
 
 # Limitation
-* RHEL / Centos use "GLIBC". but alpine use "MUSL".
-* gcc compile is not compatable between RHEL/CentOS and Alpine
+* Basicllay generic linux distro use basic library as "GLIBC". but alpine use "MUSL". There's no binary compatability between libc level.
+* gcc compile is not compatable between Generic Linux Distro like (RHEL/CentOS/Debian/Ubuntu) and Alpine
