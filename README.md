@@ -12,11 +12,13 @@ maybe works with not only docker images but also bare-metal.
 
 ## tested docker images
 
-* registry.access.redhat.com/rhel7-atomic
-* registry.access.redhat.com/rhel7
-* centos
 * Debian
 * Ubuntu
+* OpenSuse
+* RHEL7
+  * registry.access.redhat.com/rhel7-atomic
+  * registry.access.redhat.com/rhel7
+* CentOS
 
 # Install
 
