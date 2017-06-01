@@ -26,29 +26,9 @@ if [ ! -f ${TAR_BIN} ] ; then
   #cp bin/* /bin/
   #cp sbin/* /sbin/
   cd /
-else if [ -f "/bin/busybox" ]; then
-  cd /tmp/
-  mv /tmp/alpine.tgz /tmp/alpine.tar.gz
-  gunzip /tmp/alpine.tar.gz
-  
-  mkdir -p /tmp/alpine
-  cd /tmp/alpine
-  tar -xvf /tmp/alpine.tar
-  mv -f lib/* /lib/
-  mv -f sbin/apk /sbin/
-  mv -f usr/share/apk /usr/share/
-  mv -f etc/apk /etc/
-  mv -f var/cache/apk /var/cache/
-  mv -f var/lib/apk /var/lib/
-  #mv -f bin/busybox /bin/
-  #cp bin/* /bin/
-  #cp sbin/* /sbin/
-  cd /
 else
   #Fetch Alpine base system
   ${TAR_BIN} -xvzf /tmp/alpine.tgz --wildcards --no-anchored 'lib' '*apk*' 'bin'
-
-fi
 fi
 
 rm -rf /tmp/alpine*
