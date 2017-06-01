@@ -26,7 +26,7 @@ if [ ! -f ${TAR_BIN} ] ; then
   #cp bin/* /bin/
   #cp sbin/* /sbin/
   cd /
-else if [ -f "/bin/busybox" ]; then
+elif [ -f "/bin/busybox" ]; then
   cd /tmp/
   mv /tmp/alpine.tgz /tmp/alpine.tar.gz
   gunzip /tmp/alpine.tar.gz
