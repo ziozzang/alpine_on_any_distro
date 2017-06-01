@@ -26,7 +26,7 @@ if [ ! -f ${TAR_BIN} ] ; then
   #cp bin/* /bin/
   #cp sbin/* /sbin/
   cd /
-elif [ -f "/bin/busybox" ]; then
+else if [ -f "/bin/busybox" ]; then
   cd /tmp/
   mv /tmp/alpine.tgz /tmp/alpine.tar.gz
   gunzip /tmp/alpine.tar.gz
@@ -48,6 +48,7 @@ else
   #Fetch Alpine base system
   ${TAR_BIN} -xvzf /tmp/alpine.tgz --wildcards --no-anchored 'lib' '*apk*' 'bin'
 
+fi
 fi
 
 rm -rf /tmp/alpine*
