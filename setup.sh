@@ -9,13 +9,27 @@ cd /
 curl -o /tmp/alpine.tgz ${ALPINE_URL}
 
 # if there's no tar utility, use busybox's tar utility
-if [ ! -f ${TAR_BIN} ]; then
+if [ ! -f ${TAR_BIN} ] ; then
   curl -o /tmp/busybox ${BUSYBOX_BIN_URL}
   chmod +x /tmp/busybox
   
   mkdir -p /tmp/alpine
   cd /tmp/alpine
   /tmp/busybox tar -xzvf /tmp/alpine.tgz
+  mv -f lib/* /lib/
+  mv -f sbin/apk /sbin/
+  mv -f usr/share/apk /usr/share/
+  mv -f etc/apk /etc/
+  mv -f var/cache/apk /var/cache/
+  mv -f var/lib/apk /var/lib/
+  mv -f bin/busybox /bin/
+  #cp bin/* /bin/
+  #cp sbin/* /sbin/
+  cd /
+else if [ -f "/bin/busybox" ]; then
+  mkdir -p /tmp/alpine
+  cd /tmp/alpine
+  tar -xzvf /tmp/alpine.tgz
   mv -f lib/* /lib/
   mv -f sbin/apk /sbin/
   mv -f usr/share/apk /usr/share/
