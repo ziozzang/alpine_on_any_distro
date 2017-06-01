@@ -25,6 +25,8 @@ maybe works with not only docker images but also bare-metal.
 
 * Cirros
 
+* Issue: busybox docker image has issue with HTTPS fetch. so cannot be installed.
+
 # Install
 
 Just run command.
