@@ -10,7 +10,7 @@ Tested on Any Docker based linux. (only tested for x86_64 based)
 
 maybe works with not only docker images but also bare-metal.
 
-## tested docker images
+## tested docker images - Generic Linux distro.
 
 * Debian
 * Ubuntu
@@ -20,6 +20,11 @@ maybe works with not only docker images but also bare-metal.
   * registry.access.redhat.com/rhel7
 * CentOS
 
+
+## tested docker images - busybox based Linux distro.
+
+* Cirros
+
 # Install
 
 Just run command.
@@ -28,7 +33,7 @@ Just run command.
 curl -sL bit.ly/alpineapk | sh
 ```
 
-if you want setup for Busybox based distro, use command below
+if you want setup for Busybox based distro(like cirros), use command below
 
 ```
 curl -sL bit.ly/alpinebusybox | sh
