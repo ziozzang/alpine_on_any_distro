@@ -13,7 +13,7 @@ gunzip alpine.tar.gz
 mkdir -p /tmp/alpine
 cd /tmp/alpine
 
-tar -xzvf /tmp/alpine.tgz
+tar -xvf /tmp/alpine.tar
 mv -f lib/* /lib/
 mv -f sbin/apk /sbin/
 mv -f usr/share/apk /usr/share/
