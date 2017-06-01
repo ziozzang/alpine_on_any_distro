@@ -30,5 +30,6 @@ curl -sL bit.ly/alpineapk | sh
 MIT License. use your own risk.
 
 # Limitation
+* Need curl command. (ubuntu and debian, opensuse minimal docker images has no curl. you have to install it.)
 * Basicllay generic linux distro use basic library as "GLIBC". but alpine use "MUSL". There's no binary compatability between libc level.
 * gcc compile is not compatable between Generic Linux Distro like (RHEL/CentOS/Debian/Ubuntu) and Alpine
