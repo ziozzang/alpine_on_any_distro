@@ -2,7 +2,7 @@
 # How to install. based for busybox distro
 # curl -SL https://raw.githubusercontent.com/ziozzang/alpine_on_any_distro/master/setup-busybox.sh | sh
 
-ALPINE_URL="https://nl.alpinelinux.org/alpine/v3.6/releases/x86_64/alpine-minirootfs-3.6.2-x86_64.tar.gz"
+ALPINE_URL="https://nl.alpinelinux.org/alpine/v3.7/releases/x86_64/alpine-minirootfs-3.7.0-x86_64.tar.gz"
 
 TAR_BIN="/bin/tar"
 
