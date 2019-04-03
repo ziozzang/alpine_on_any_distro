@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BUSYBOX_BIN_URL="https://www.busybox.net/downloads/binaries/1.27.1-i686/busybox"
-ALPINE_URL="https://nl.alpinelinux.org/alpine/v3.7/releases/x86_64/alpine-minirootfs-3.7.0-x86_64.tar.gz"
+BUSYBOX_BIN_URL="https://www.busybox.net/downloads/binaries/1.30.0-i686/busybox"
+ALPINE_URL="https://nl.alpinelinux.org/alpine/v3.9/releases/x86_64/alpine-minirootfs-3.9.2-x86_64.tar.gz"
 
 TAR_BIN="/bin/tar"
 
